@@ -9,7 +9,7 @@ import { useContext } from 'react';
 
 function App() {
 
-const {currentStep, finalData} = useContext(multiStepContext);
+const {currentStep} = useContext(multiStepContext);
 
   function showStep(step){
     switch (step) {
@@ -20,7 +20,9 @@ const {currentStep, finalData} = useContext(multiStepContext);
       case 3:
         return <ThirdStep/>
       case 4:
-        return <ForthStep />  
+        return <ForthStep />
+      default:
+        return <FirstStep/> 
     }
   }
 
