@@ -32,7 +32,8 @@
     flex-direction: column;
     font-size: medium;
     font-weight: 500;
-    width: 377px;
+    max-width: 377px;
+    width: 100%;
 }
 
 .wrap{
@@ -91,7 +92,8 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 410px;
+    width: 377px;
+    
 }
 
 .tf1{
@@ -102,3 +104,14 @@
 .tf2{
     width: 260px;
 }
+
+/* @media screen and (max-width:380px) {
+    .fListsL{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fText{
+        text-align: start;
+    }
+} */

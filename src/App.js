@@ -34,7 +34,7 @@ const {currentStep, finalData} = useContext(multiStepContext);
         </div>
 
         <div className='center-stepper'>
-          <Stepper style={{width: '78%'}} activeStep={currentStep - 1} orientation='horizontal' >
+          <Stepper style={{width: '80%'}} activeStep={currentStep - 1} orientation='horizontal' >
             <Step>
               <StepLabel></StepLabel>
             </Step>
