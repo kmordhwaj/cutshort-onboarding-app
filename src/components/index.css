@@ -1,0 +1,104 @@
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check{
+    margin-top: 60px;
+}
+
+.heading{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.heading1{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.para{
+  font-weight: 200;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.fullHeader{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 500;
+    width: 377px;
+}
+
+.wrap{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: start;
+}
+
+.wrapper1{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    border: 2px solid purple;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: start;
+}
+
+.textField{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 20px;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.extra{
+    font-size: 18px;
+    font-weight: 100;
+    color: grey;
+}
+
+.button{
+    height: 45px;
+    background-color: indigo;
+}
+
+.belowTextField{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 410px;
+}
+
+.tf1{
+    width: 150px;
+    background-color: whitesmoke;
+}
+
+.tf2{
+    width: 260px;
+}
