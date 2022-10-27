@@ -3,7 +3,9 @@ import FirstStep from './components/FirstStep';
 import SecondStep from './components/SecondStep';
 import ThirdStep from './components/ThirdStep';
 import ForthStep from './components/ForthStep';
-import {Stepper, Step, StepLabel} from '@mui/material';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
 import {multiStepContext} from './contexts/StepContext';
 import { useContext } from 'react';
 
@@ -36,9 +38,10 @@ const {currentStep} = useContext(multiStepContext);
         </div>
 
         <div className='center-stepper'>
+          
           <Stepper style={{width: '80%'}} activeStep={currentStep - 1} orientation='horizontal' >
             <Step>
-              <StepLabel></StepLabel>
+              <StepLabel ></StepLabel>
             </Step>
             <Step>
               <StepLabel></StepLabel>
