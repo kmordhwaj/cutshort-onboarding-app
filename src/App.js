@@ -28,19 +28,19 @@ const {currentStep} = useContext(multiStepContext);
         return <FirstStep/> 
     }
   }
-
-
+  
   return (
     <div className="App">
       <header className="App-header">
         
+        {/* logo */}
         <div className='Logo'>
           <img height={40} width={40} src="https://play-lh.googleusercontent.com/i2WvqDUR5xfvnR8f6WW7ufsXL00Wif67HNt7JzdIooU42Benq16mcyw_w0Zy82oNdg=w240-h480-rw" alt="logo" />
           Cutshort
         </div>
-
-        <div className='center-stepper'>
-          
+        
+        {/* stepper */}
+        <div className='center-stepper'>        
           <Stepper activeStep={currentStep - 1} orientation='horizontal' >
             <Step  >
               <StepLabel ></StepLabel>
@@ -56,6 +56,8 @@ const {currentStep} = useContext(multiStepContext);
             </Step>
           </Stepper>
         </div>
+
+         {/* body */}
         {showStep(currentStep)}
       </header>
     </div>
