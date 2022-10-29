@@ -26,3 +26,7 @@
 .center-stepper{
   width: 350px;
 }
+
+.stepLabel{
+  padding: 0;
+}
