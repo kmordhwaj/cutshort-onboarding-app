@@ -37,7 +37,7 @@ const ThirdStep = () => {
       
       
       </div>
-      <Button onClick={() => setCurrentStep(4)} className='button' variant='contained' color='secondary'>Create Workspace</Button>
+      <Button onClick={() => setCurrentStep(3)} className='button' variant='contained' color='secondary'>Create Workspace</Button>
       
   </div>
   </div>

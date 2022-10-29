@@ -22,7 +22,7 @@ const SecondStep = () => {
     </div>
          </div>
     
-         <Button onClick={() => setCurrentStep(3)} className='button' variant='contained' color='secondary'>Create Workspace</Button>    
+         <Button onClick={() => setCurrentStep(2)} className='button' variant='contained' color='secondary'>Create Workspace</Button>    
       </div>
     </div>
   )

@@ -22,7 +22,7 @@ const FirstStep = () => {
         <TextField value={userData['displayName']} onChange={(e) => setUserData({...userData, "displayName": e.target.value})} label="Display Name" margin='normal' variant='outlined' color='secondary' />
         </div>
         
-        <Button onClick={() => setCurrentStep(2)} className='button' variant='contained' color='secondary'>Create Workspace</Button>
+        <Button onClick={() => setCurrentStep(1)} className='button' variant='contained' color='secondary'>Create Workspace</Button>
         
     </div>
     </div>

@@ -6,13 +6,10 @@ import ForthStep from './components/ForthStep';
  import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel, { stepLabelClasses } from '@mui/material/StepLabel';
-// import { makeStyles, StepConnector } from '@mui/material';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
 import { styled } from '@mui/material/styles';
 import {multiStepContext} from './contexts/StepContext';
 import { useContext } from 'react';
-// import { Stepper } from 'react-stepper-horizontal';
-//import Stepper from 'react-stepper-horizontal';
 
 function App() {
 
@@ -20,13 +17,13 @@ const {currentStep} = useContext(multiStepContext);
 
   function showStep(step){
     switch (step) {
-      case 1:
+      case 0:
         return <FirstStep/>
-      case 2:
+      case 1:
         return <SecondStep/>
-      case 3:
+      case 2:
         return <ThirdStep/>
-      case 4:
+      case 3:
         return <ForthStep />
       default:
         return <FirstStep/> 
@@ -34,17 +31,38 @@ const {currentStep} = useContext(multiStepContext);
   }
 
   const ColorlibConnector = styled(StepConnector)(() => ({
+    padding:'0px',
+            margin:'0px',
       [`&.${stepConnectorClasses.alternativeLabel}`]: {
         top: 30,
+        marginLeft: '0px',
+        marginRight: '0px',
+        padding:'0px' 
       },
       [`&.${stepConnectorClasses.active}`]: {
-        [`& .${stepConnectorClasses.line}`]: {
+        [`& .${stepConnectorClasses.line}`]: (currentStep === 3 ?  {
           opacity: 1,
-        },
+          marginLeft: '0px',
+        marginRight: '0px',
+        padding:'0px' 
+        } :
+        {
+          opacity: 1,
+          width:'220%',
+          marginLeft: '0px',
+        marginRight: '0px',
+        padding:'0px' 
+        }
+        ) ,
       },
       [`&.${stepConnectorClasses.completed}`]: {
-        [`& .${stepConnectorClasses.line}`]: {
+        [`& .${stepConnectorClasses.line}`]:
+         {
           opacity: 1,
+           width:'100%',
+          marginLeft: '0px',
+        marginRight: '0px',
+        padding:'0px'
         },
       },
       [`& .${stepConnectorClasses.line}`]: {
@@ -52,27 +70,39 @@ const {currentStep} = useContext(multiStepContext);
         border: 0,
         backgroundColor: 'grey',
         opacity: 0.3,
-          marginLeft: 0,
-          marginRight: 0,
+        marginLeft: '0px',
+        marginRight: '0px',
+        padding:'0px'
       },
     }));
 
     const ColorlibStepLabel = styled(StepLabel)(() => ({
+      padding:'0px',
+            margin:'0px',
+            color:'#A020F0',
+            marginLeft:'0px',
+            marginRight:'0px',
         [`&.${stepLabelClasses.active}`]: {
           [`& .${stepLabelClasses.label}`]: {
             color: '#A020F0',
-             padding: '0px',
+            padding:'0px',
+            margin:'0px',
           },
         },
         [`&.${stepLabelClasses.completed}`]: {
           [`& .${stepLabelClasses.label}`]: {
             color: '#A020F0',
+            padding:'0px',
+            margin:'0px',
           },
         },
         [`& .${stepLabelClasses.label}`]: {
           color: 'rgb(255, 255, 255, 0.3)',
+          padding:'0px',
+          margin:'0px'
         },
       }));
+
   
   return (
     <div className="App">
@@ -86,34 +116,28 @@ const {currentStep} = useContext(multiStepContext);
         
         {/* stepper */}
         <div className='center-stepper'>        
-          <Stepper activeStep={currentStep - 1} orientation='horizontal' connector={<ColorlibConnector/>} >
-            <Step className='step'> 
+          <Stepper activeStep={currentStep} orientation='horizontal' connector={<ColorlibConnector/>} >
+             <Step className='step'> 
+             <ColorlibStepLabel>
+             </ColorlibStepLabel>                          
+             </Step>
+             
+             <Step >
             <ColorlibStepLabel>
-            {/* <StepLabel className='stepLabel' >
-              
-              </StepLabel> */}
-            </ColorlibStepLabel>            
-              
-            </Step>
-            <Step >
-              <StepLabel></StepLabel>
-            </Step>
-            <Step >
-              <StepLabel></StepLabel>
-            </Step>
-            <Step >
-              <StepLabel></StepLabel>
-            </Step>
+             </ColorlibStepLabel>
+             </Step>
+
+             <Step >
+            <ColorlibStepLabel>
+             </ColorlibStepLabel>
+             </Step>
+
+             <Step >
+             <ColorlibStepLabel>
+             </ColorlibStepLabel>
+             </Step>
           </Stepper>
         </div>
-      
-          {/* <Stepper 
-          defaultBarColor='#efefce'
-          barStyle='solid'
-          steps={[{}, {},{},{}]}
-          activeStep={currentStep - 1}
-          /> */}
-      
 
          {/* body */}
         {showStep(currentStep)}

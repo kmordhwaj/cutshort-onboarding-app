@@ -5,7 +5,7 @@ export const multiStepContext = React.createContext();
 
 const StepContext = () => {
     
-const [currentStep, setCurrentStep] = useState(1);
+const [currentStep, setCurrentStep] = useState(0);
 const [userData, setUserData] = useState([]);
 const [finalData, setFinalData] = useState([]);
 const [forSelf, setForSelf] = useState(true);
