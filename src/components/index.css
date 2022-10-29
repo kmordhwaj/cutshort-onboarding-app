@@ -86,14 +86,14 @@
 .button{
     height: 45px;
     background-color: indigo;
+    text-transform: unset !important;
 }
 
 .belowTextField{
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 377px;
-    
+    width: 377px;    
 }
 
 .tf1{
