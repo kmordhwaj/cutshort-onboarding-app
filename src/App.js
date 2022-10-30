@@ -43,15 +43,15 @@ const {currentStep} = useContext(multiStepContext);
         [`& .${stepConnectorClasses.line}`]: (currentStep === 3 ?  {
           opacity: 1,
           marginLeft: '0px',
-        marginRight: '0px',
-        padding:'0px' 
+          marginRight: '0px',
+          padding:'0px' 
         } :
         {
           opacity: 1,
           width:'220%',
           marginLeft: '0px',
-        marginRight: '0px',
-        padding:'0px' 
+          marginRight: '0px',
+          padding:'0px' 
         }
         ) ,
       },
