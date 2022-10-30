@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cutshort-onboarding-app/static/css/main.bfc4bd5a.css",
+    "main.js": "/cutshort-onboarding-app/static/js/main.c484e360.js",
+    "index.html": "/cutshort-onboarding-app/index.html",
+    "main.bfc4bd5a.css.map": "/cutshort-onboarding-app/static/css/main.bfc4bd5a.css.map",
+    "main.c484e360.js.map": "/cutshort-onboarding-app/static/js/main.c484e360.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfc4bd5a.css",
+    "static/js/main.c484e360.js"
+  ]
+}
