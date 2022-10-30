@@ -35,22 +35,22 @@ const {currentStep} = useContext(multiStepContext);
             margin:'0px',
       [`&.${stepConnectorClasses.alternativeLabel}`]: {
         top: 30,
-        marginLeft: '0px',
-        marginRight: '0px',
+        // marginLeft: '0px',
+        // marginRight: '0px',
         padding:'0px' 
       },
       [`&.${stepConnectorClasses.active}`]: {
         [`& .${stepConnectorClasses.line}`]: (currentStep === 3 ?  {
           opacity: 1,
-          marginLeft: '0px',
-          marginRight: '0px',
+          // marginLeft: '0px',
+          // marginRight: '0px',
           padding:'0px' 
         } :
         {
           opacity: 1,
           width:'220%',
-          marginLeft: '0px',
-          marginRight: '0px',
+          // marginLeft: '0px',
+          // marginRight: '0px',
           padding:'0px' 
         }
         ) ,
@@ -60,19 +60,19 @@ const {currentStep} = useContext(multiStepContext);
          {
           opacity: 1,
            width:'100%',
-          marginLeft: '0px',
-        marginRight: '0px',
+        //   marginLeft: '0px',
+        // marginRight: '0px',
         padding:'0px'
         },
       },
       [`& .${stepConnectorClasses.line}`]: {
         height: 1,
         border: 0,
-        backgroundColor: 'grey',
+        backgroundColor: 'purple',
         opacity: 0.3,
-        marginLeft: '0px',
-        marginRight: '0px',
-        padding:'0px'
+        // marginLeft: '0px',
+        // marginRight: '0px',
+        padding:0
       },
     }));
 
@@ -84,24 +84,26 @@ const {currentStep} = useContext(multiStepContext);
             marginRight:'0px',
         [`&.${stepLabelClasses.active}`]: {
           [`& .${stepLabelClasses.label}`]: {
-            color: '#A020F0',
+            
             padding:'0px',
             margin:'0px',
+            color: 'rgb(153, 50, 204, 0.3)',
           },
         },
         [`&.${stepLabelClasses.completed}`]: {
           [`& .${stepLabelClasses.label}`]: {
-            color: '#A020F0',
+            color: 'rgb(153, 50, 204, 0.3)',
             padding:'0px',
             margin:'0px',
           },
         },
         [`& .${stepLabelClasses.label}`]: {
-          color: 'rgb(255, 255, 255, 0.3)',
+          color: 'rgb(153, 50, 204, 0.3)',
           padding:'0px',
           margin:'0px'
         },
       }));
+
 
   
   return (
@@ -119,7 +121,7 @@ const {currentStep} = useContext(multiStepContext);
           <Stepper activeStep={currentStep} orientation='horizontal' connector={<ColorlibConnector/>} >
              <Step className='step'> 
              <ColorlibStepLabel>
-             </ColorlibStepLabel>                          
+             </ColorlibStepLabel>                  
              </Step>
              
              <Step >
@@ -136,7 +138,7 @@ const {currentStep} = useContext(multiStepContext);
              <ColorlibStepLabel>
              </ColorlibStepLabel>
              </Step>
-          </Stepper>
+          </Stepper>          
         </div>
 
          {/* body */}
