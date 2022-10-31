@@ -7,6 +7,6 @@ I deployed it on gh-pages.
 https://kmordhwaj.github.io/cutshort-onboarding-app/
 
 // TO DO IN IT
-To add backend.
-To fill margin gap between stepperLabel and stepperConnector.
-To change the Step colour.
+*To add backend.
+*To fill margin gap between stepperLabel and stepperConnector.
+*To change the Step colour.
