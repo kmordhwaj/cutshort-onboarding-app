@@ -1,5 +1,5 @@
 # cutshort-onboarding-app
-It is an assignment web app made with Javascript, React, ContextProvider, MUI.
+It is an assignment web app for ***Cutshort*** made with Javascript, React, ContextProvider, MUI.
 
 It is responsive to various screens.
 
